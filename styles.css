@@ -1,0 +1,140 @@
+:root {
+    --mobile-hero-app-row: 9fr;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 550px 1fr;
+    grid-template-columns: 1fr 550px 1fr;
+    -ms-grid-rows: 110px 9fr 1fr;
+    grid-template-rows: 110px 9fr 1fr;
+    background: #a9a4b3;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -ms-grid-column-align: center;
+    justify-self: center;
+
+}
+
+.todo-app {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 60px 1fr 45px;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    background: white;
+    overflow: auto;
+    border-radius: 7px;
+    -webkit-box-shadow: 0 10px 20px rgba(0.0,0,0.19),0 6px 6px rgba(0.0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0.0,0,0.19),0 6px 6px rgba(0.0,0,0.23);
+    margin-right: -18px;
+    margin-left: -18px;
+}
+
+.todo-menu-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px 1fr;
+    grid-template-columns: 50px 1fr;
+    -ms-grid-rows: 60px;
+    grid-template-rows: 60px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.19);
+}
+
+.add-todo-text-input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+::-webkit-input-placeholder {
+    color: #e6e6e6;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    color: #e6e6e6;
+    font-style: italic;
+}
+::-ms-input-placeholder {
+    color: #e6e6e6;
+    font-style: italic;
+}
+
+::placeholder {
+    color: #e6e6e6;
+    font-style: italic;
+}
+
+:-moz-placeholder, ::-moz-placeholder {
+    opacity: 1;
+}
+
+.toggle-all, .delete-button, .delete-completed-button, .menu-2-button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.toggle-all {
+    color: #e6e6e6;
+    -ms-grid-column-align: stretch;
+    justify-self: stretch;
+    text-align: center;
+}
+
+.toggle-all-checked {
+    color: #4d4d4d;
+}
+
+.rotate {
+    display: inline-block;
+    font-size: 20px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    pointer-events: none;
+}
+
+.todo-menu-2 {
+    display: -ms-grid;;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr 2fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #777;
+    background: #f4f5f6;
+    font-size: 14px;
+    font-weight: 300;
+}
